@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8eafa">
+  <title>Happy Birthday Aadil ♡</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="scene"></canvas>
+
+  <div class="container">
+
+    <header class="navbar">
+      <a href="#home" class="logo">♡ A LITTLE SURPRISE</a>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#memories">Memories</a>
+        <a href="#letter">Letter</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <p class="eyebrow">A LITTLE SOMETHING FOR SOMEONE SPECIAL</p>
+
+        <h1>
+          Happy Birthday,<br>
+          <span>Aadil Ali Umrani!</span>
+        </h1>
+
+        <p class="description">
+          Today is your day! This little world is created
+          especially for you and our friendship.
+        </p>
+
+        <button class="main-btn" id="openGift">
+          Open Your Gift ♡
+        </button>
+
+        <p class="made">MADE WITH FRIENDSHIP & LOVE ✦</p>
+      </div>
+
+      <!-- CSS 3D GIFT -->
+      <div class="gift-stage" id="gift3d">
+        <div class="glow"></div>
+
+        <div class="gift">
+          <div class="gift-body">
+            <div class="gift-ribbon"></div>
+          </div>
+          <div class="gift-lid">
+            <div class="lid-ribbon"></div>
+          </div>
+          <div class="bow left"></div>
+          <div class="bow right"></div>
+          <div class="knot"></div>
+        </div>
+
+        <p class="tap-text">TAP THE GIFT TO OPEN ↓</p>
+      </div>
+
+    </section>
+
+    <!-- SURPRISE BUTTONS -->
+    <section class="quick-links">
+      <button class="tile" data-target="music">
+        <span>♫</span>
+        <b>A Song For You</b>
+        <small>Your birthday soundtrack</small>
+      </button>
+
+      <button class="tile" data-target="memories">
+        <span>📸</span>
+        <b>Our Memories</b>
+        <small>Beautiful moments</small>
+      </button>
+
+      <button class="tile" data-target="letter">
+        <span>💌</span>
+        <b>A Little Letter</b>
+        <small>From the heart</small>
+      </button>
+    </section>
+
+    <!-- CAKE -->
+    <section class="cake-section">
+      <p class="eyebrow">MAKE A WISH, AADIL!</p>
+      <h2>A Cake Made Just For You ♡</h2>
+      <p>Tap the cake to make a birthday wish.</p>
+
+      <button class="cake-button" id="cakeButton">
+        <div class="cake">
+          <div class="candles">
+            <i></i><i></i><i></i>
+          </div>
+          <div class="cake-top"></div>
+          <div class="icing"></div>
+          <div class="cake-body"></div>
+          <div class="plate"></div>
+        </div>
+      </button>
+
+      <p id="wishFeedback">Make a wish ✨</p>
+    </section>
+
+    <!-- MEMORIES -->
+    <section class="memories" id="memories">
+      <p class="eyebrow">A FEW FAVOURITE MOMENTS</p>
+      <h2>Our Little Memory Lane</h2>
+      <p class="section-desc">Five moments worth remembering.</p>
+
+      <div class="gallery">
+        <div class="photo main-photo">
+          <img src="images/aadil-01.jpg" alt="Aadil portrait">
+          <span>A Special Moment ♡</span>
+        </div>
+
+        <div class="photo">
+          <img src="images/aadil-02.jpg" alt="Aadil holding a flower">
+          <span>Little Sunshine</span>
+        </div>
+
+        <div class="photo">
+          <img src="images/aadil-03.jpg" alt="Aadil cinematic portrait">
+          <span>Main Character Energy</span>
+        </div>
+
+        <div class="photo">
+          <img src="images/aadil-04.jpg" alt="Aadil wearing sunglasses">
+          <span>Always Iconic</span>
+        </div>
+
+        <div class="photo">
+          <img src="images/aadil-05.jpg" alt="Aadil in traditional clothes">
+          <span>One To Remember</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MUSIC -->
+    <section class="music-section" id="music">
+      <div class="music-card">
+        <div class="balloons">🎈 🎈 🎈</div>
+        <p class="eyebrow">YOUR BIRTHDAY SOUNDTRACK</p>
+        <h2>A Song To Make<br>Today Sweeter</h2>
+        <p>Choose a birthday song from your phone.</p>
+
+        <label for="musicFile" class="music-btn">
+          + Choose Music
+        </label>
+
+        <input type="file" id="musicFile" accept="audio/*">
+
+        <audio id="audioPlayer" controls></audio>
+        <small id="musicStatus">Your music stays on your device.</small>
+      </div>
+    </section>
+
+    <!-- LETTER -->
+    <section class="letter-section" id="letter">
+      <div class="letter">
+        <p class="eyebrow">OPEN WHEN YOU NEED A SMILE</p>
+        <div class="envelope">💌</div>
+
+        <h2>Dear Aadil,</h2>
+
+        <p>
+          Happy Birthday, my friend! I hope your day is full
+          of laughter, beautiful surprises, and happiness.
+          May this new chapter bring you confidence to chase
+          your dreams and strength for every challenge.
+        </p>
+
+        <p>
+          Thank you for being part of my journey.
+          Here's to more jokes, more adventures, more
+          memories, and many more birthdays together.
+        </p>
+
+        <p class="signature">
+          Wishing you the best, always. ♡
+        </p>
+      </div>
+    </section>
+
+    <!-- FINALE -->
+    <section class="finale">
+      <p>ONE MORE TIME, FROM THE HEART</p>
+      <h2>Happy Birthday,<br><span>Aadil!</span></h2>
+      <button class="main-btn" id="celebrate">
+        Let's Celebrate! ✨
+      </button>
+    </section>
+
+    <footer>
+      MADE ESPECIALLY FOR AADIL ALI UMRANI ♡
+    </footer>
+
+  </div>
+
+  <!-- GIFT POPUP -->
+  <div class="modal" id="giftModal">
+    <div class="modal-card">
+      <button class="close" id="closeGift">×</button>
+      <div class="modal-emoji">🎁</div>
+      <p class="eyebrow">A SPECIAL SURPRISE</p>
+      <h2>It's Your Day,<br><span>Aadil!</span></h2>
+      <p>
+        May your life always be filled with happiness,
+        success, laughter and unforgettable memories.
+      </p>
+      <button class="main-btn" id="modalCelebrate">
+        Celebrate With Me ♡
+      </button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
